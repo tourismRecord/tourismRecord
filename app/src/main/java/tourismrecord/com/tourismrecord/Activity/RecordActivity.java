@@ -100,7 +100,7 @@ public class RecordActivity extends BaseActivity implements NavigationView.OnNav
                 Toast.makeText(RecordActivity.this,"click personalInfo",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.myshare:
-                Toast.makeText(RecordActivity.this,"click myshare",Toast.LENGTH_SHORT).show();
+                MyShareActivity.actionStart(RecordActivity.this);
                 break;
             default:
         }
@@ -109,7 +109,7 @@ public class RecordActivity extends BaseActivity implements NavigationView.OnNav
         return true;
     }
     private void initList(){
-        ShareContent shareContent=new ShareContent("xingyingyue",R.mipmap.ic_launcher,"no_title","2017-04-16");
+        ShareContent shareContent=new ShareContent(0,"xingyingyue",R.mipmap.ic_launcher,"no_title","2017-04-16");
         shareContentList.add(shareContent);
     }
 }

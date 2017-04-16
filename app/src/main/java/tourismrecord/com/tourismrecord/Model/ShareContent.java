@@ -5,24 +5,33 @@ package tourismrecord.com.tourismrecord.Model;
  */
 
 public class ShareContent {
+    private int id;
     private String userName;
     private int imageId;
     private String title;
     private String publishTime;
     private String content;
 
-    public ShareContent(String userName,int imageId,String title,String publishTime){
+    public ShareContent(int id,String userName,int imageId,String title,String publishTime){
+        this.id=id;
         this.userName=userName;
         this.imageId=imageId;
         this.title=title;
         this.publishTime=publishTime;
     }
-    public ShareContent(String userName,int imageId,String title,String publishTime,String content){
+    public ShareContent(int id,String userName,int imageId,String title,String publishTime,String content){
+        this.id=id;
         this.userName=userName;
         this.imageId=imageId;
         this.title=title;
         this.publishTime=publishTime;
         this.content=content;
+    }
+    public int getId(){
+        return id;
+    }
+    public void setId(int id){
+        this.id=id;
     }
     public String getUserName(){
         return userName;

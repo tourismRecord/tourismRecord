@@ -7,4 +7,5 @@
     <color name="buttonnosort">#000080</color>
     <color name="backgroundnosort">#FFFFFF</color>
     <color name="backgroundsort">#BABABA</color>
+    <color name="textcolorinbackground">#FFFFFF</color>
 </resources>

@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import tourismrecord.com.tourismrecord.Activity.MyShareContentActivity;
 import tourismrecord.com.tourismrecord.Activity.ShareContentActivity;
 import tourismrecord.com.tourismrecord.Model.ShareContent;
 import tourismrecord.com.tourismrecord.R;
@@ -18,7 +19,7 @@ import tourismrecord.com.tourismrecord.R;
  * Created by huanghaojian on 17/4/15.
  */
 
-public class ShareContentAdapter extends RecyclerView.Adapter<ShareContentAdapter.ViewHolder>{
+public class MyShareContentAdapter extends RecyclerView.Adapter<MyShareContentAdapter.ViewHolder>{
     private List<ShareContent> shareContentList;
     static class ViewHolder extends RecyclerView.ViewHolder{
         ImageView head;
@@ -35,7 +36,7 @@ public class ShareContentAdapter extends RecyclerView.Adapter<ShareContentAdapte
             publishTime=(TextView)view.findViewById(R.id.publish_time);
         }
     }
-    public ShareContentAdapter(List<ShareContent> shareContentList){
+    public MyShareContentAdapter(List<ShareContent> shareContentList){
         this.shareContentList=shareContentList;
     }
 
@@ -48,7 +49,7 @@ public class ShareContentAdapter extends RecyclerView.Adapter<ShareContentAdapte
             public void onClick(View v){
                 int position=viewHolder.getAdapterPosition();
                 ShareContent shareContent=shareContentList.get(position);
-                ShareContentActivity.actionStart(v.getContext(),shareContent.getId());
+                MyShareContentActivity.actionStart(v.getContext(),shareContent.getId());
             }
         });
         return  viewHolder;

@@ -21,6 +21,15 @@
             android:label="编写内容"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity android:name=".Activity.MyShareActivity"
+            android:label="我的分享">
+        </activity>
+        <activity android:name=".Activity.MyShareContentActivity"
+            android:label="我的分享内容">
+        </activity>
+        <activity android:name=".Activity.ShareContentActivity"
+            android:label="分享内容">
+        </activity>
     </application>
 
 </manifest>

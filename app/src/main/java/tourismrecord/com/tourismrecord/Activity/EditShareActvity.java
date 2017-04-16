@@ -26,7 +26,7 @@ public class EditShareActvity extends BaseActivity {
         initView();
     }
     void initView(){
-        toolbar=(Toolbar)findViewById(R.id.toolbar);
+        toolbar=(Toolbar)findViewById(R.id.toolbareditshare);
         setSupportActionBar(toolbar);
         title=(EditText)findViewById(R.id.shareTitle);
         content=(EditText)findViewById(R.id.shareContent);
